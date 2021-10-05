@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <header>
+      <h1 id="title" class="text-center">
+        Registration Form
+      </h1>
+      <p id="description" class="desc-center">
+        Please take your time to fill this form to join this bootcamp
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">E-mail</label>
+        <input
+          type="text"
+          class="form-control"
+          id="email"
+          placeholder="Enter your E-mail"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue">(Optional)</span></label>
+        <input
+          type="number"
+          name="age"
+          class="form-control"
+          id="number"
+          min="17"
+          max="99"
+          placeholder="Enter your age"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <p>Which current role that describes you?</p>
+        <select name="role" id="dropdown">
+          <option disable selected value>Select your current role</option>
+          <option value="job">Full-time job</option>
+          <option value="learner">Full-time learner</option>
+          <option value="student">Student</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <p>Select the course you want to take</p>
+        <label>
+          <input 
+            type="radio"
+            name="user-pick"
+            value="web-development"
+            class="input-radio"
+          />
+          Web Development
+        </label>
+        <label>
+          <input 
+            type="radio"
+            name="user-pick"
+            value="android-development"
+            class="input-radio"
+          />
+          Android Development
+        </label>
+        <label>
+          <input 
+            type="radio"
+            name="user-pick"
+            value="machine-learning"
+            class="input-radio"
+          />
+          Machine Learning
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <p>How do you know this bootcamp?</p>
+        <label>
+          <input 
+            type="checkbox"
+            name="user-info"
+            value="instagram"
+            class="input-checkbox"
+          />
+          Instagram
+        </label>
+        <label>
+          <input 
+            type="checkbox"
+            name="user-info"
+            value="twitter"
+            class="input-checkbox"
+          />
+          Twitter
+        </label>
+        <label>
+          <input 
+            type="checkbox"
+            name="user-info"
+            value="website"
+            class="input-checkbox"
+          />
+          Website
+        </label>
+        <label>
+          <input 
+            type="checkbox"
+            name="user-info"
+            value="friends"
+            class="input-checkbox"
+          />
+          Friends
+        </label>
+        <label>
+          <input 
+            type="checkbox"
+            name="user-info"
+            value="other"
+            class="input-checkbox"
+          />
+          Other
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <p>Can you tell us, why do you wanna join our bootcamp?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Type here..."
+        ></textarea>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

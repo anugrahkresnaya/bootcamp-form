@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+body {
+  background-color: black;
+  color: whitesmoke;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+form {
+  background-color: #2B2B2B;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px 20px;
+}
+
+.form-control {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+p,
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.desc-center {
+  text-align: center;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
